@@ -1,5 +1,5 @@
 # .bashrc.d
-My `~/.bashrc` hacks! 
+My `~/.bashrc` hacks!  
 Better organized in a dedicated directory :)
 
 ## How To

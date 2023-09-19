@@ -10,13 +10,13 @@ Better organized in a dedicated directory :)
 
 ## Script to add to .bashrc
 A similar script might be already there (for example on Fedora).  
-If this is the case, simply modify it to source only those files ending in `.bashrc`:
+If this is the case, simply modify it to source only those files ending in `.sh`:
 
 ```bash
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	#for rc in ~/.bashrc.d/*; do
-	for rc in ~/.bashrc.d/*.bashrc; do
+	for rc in ~/.bashrc.d/*.sh; do
 		if [ -f "$rc" ]; then
 			. "$rc"
 		fi
@@ -29,7 +29,7 @@ unset rc
 A simpler version:
 
 ```bash
-for RC_FILE in ~/.bashrc.d/*.bashrc
+for RC_FILE in ~/.bashrc.d/*.sh
 do source "$RC_FILE"
 done
 ```

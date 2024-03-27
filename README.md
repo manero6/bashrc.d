@@ -15,7 +15,6 @@ If this is the case, simply modify it to source only those files ending in `.sh`
 ```bash
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
-  #for rc in ~/.bashrc.d/*; do
   for rc in ~/.bashrc.d/*.sh; do
     if [ -f "$rc" ]; then
       source "$rc"
